@@ -1,14 +1,18 @@
 import './globals.css';
+import { ReactNode } from 'react';
 
 export const metadata = {
-  title: 'Dekurþrif - Premium Cleaning',
+  title: 'Dekurþrif – Premium Cleaning',
   description: 'Professional home, office, and Airbnb cleaning in Reykjavík',
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <head />
+      <body>
+        <div>{children}</div>
+      </body>
     </html>
   );
 }
